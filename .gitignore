@@ -1,5 +1,6 @@
-# Visual Studio 2015 user specific files
+# Visual Studio and Code Specific files
 .vs/
+.vscode/
 
 # Compiled Object files
 *.slo
@@ -62,6 +63,7 @@ Saved/*
 
 # Compiled source files for the engine to use
 Intermediate/*
+Binaries/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
