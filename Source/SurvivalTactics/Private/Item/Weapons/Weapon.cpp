@@ -27,3 +27,12 @@ void AWeapon::Tick(float DeltaTime)
 	AddActorWorldOffset (FVector (0.0f, 0.0f, deltaZ));
 }
 
+void AWeapon::OnSphereOverlap (UPrimitiveComponent* overlappedComp, AActor* otherActor, UPrimitiveComponent* otherComp, int32 otherBodyIndex, bool bFromSweep, const FHitResult& sweepResult)
+{
+
+}
+
+void AWeapon::OnSphereEndOverlap (UPrimitiveComponent* overlappedComp, AActor* otherActor, UPrimitiveComponent* otherComp, int32 otherBodyIndex)
+{
+
+}
