@@ -65,6 +65,11 @@ void ASurvivalTacticsCharacter::BeginPlay()
 
 void ASurvivalTacticsCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage (1, 10.f, FColor::Green, FString ("Object Begin Play Called"));
+	}
+	
 	// Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(GetController()))
 	{
